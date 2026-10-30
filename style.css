@@ -1,0 +1,39 @@
+/* Chainsaw Mail's pages: the app's teal on a near-white page, one readable column. */
+:root {
+  --brand: #0b6b5a;
+  --ink: #1b1f1e;
+  --muted: #5d6764;
+  --page: #fefefe;
+  --card: #ffffff;
+  --edge: #dfe8e5;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --brand: #4fc2aa;
+    --ink: #eef3f1;
+    --muted: #a4b0ac;
+    --page: #121614;
+    --card: #1a201e;
+    --edge: #2b3431;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--ink);
+  font: 16px/1.6 "IBM Plex Sans", system-ui, sans-serif;
+}
+main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+header { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; }
+header img { width: 44px; height: 44px; border-radius: 10px; }
+header a { color: var(--ink); text-decoration: none; font-weight: 700; font-size: 20px; }
+h1 { font-size: 30px; line-height: 1.25; margin: 8px 0 12px; }
+h2 { font-size: 20px; margin: 32px 0 8px; }
+p, li { color: var(--ink); }
+.muted { color: var(--muted); }
+a { color: var(--brand); }
+.card { background: var(--card); border: 1px solid var(--edge); border-radius: 12px; padding: 16px 20px; margin: 16px 0; }
+ul { padding-left: 20px; }
+footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--edge); font-size: 14px; color: var(--muted); }
+footer a { margin-right: 16px; }
